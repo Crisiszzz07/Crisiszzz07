@@ -111,32 +111,70 @@ const font = `'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Con
 // Lenguajes de marcado/notebooks que inflan los bytes sin decir mucho.
 var ignoredLangs = map[string]bool{"HTML": true, "CSS": true, "SCSS": true, "Jupyter Notebook": true, "Makefile": true}
 
+// Textos de cada versión del README.
+type locale struct {
+	readme    string
+	months    [12]string
+	stats     [5]string
+	weekly    string
+	langTitle string
+	langSub   string
+	header    string
+	footer    string
+}
+
+var locales = map[string]locale{
+	"es": {
+		readme:    "README.md",
+		months:    [12]string{"ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"},
+		stats:     [5]string{"contribuciones", "commits públicos", "pull requests", "PRs merged", "repos externos"},
+		weekly:    "contribuciones por semana · últimos 12 meses",
+		langTitle: "LENGUAJES",
+		langSub:   "por bytes · repos propios",
+		header:    "| # | repo | lo último | commits | fecha |",
+		footer:    "Últimos 12 meses · actualizado el %s",
+	},
+	"en": {
+		readme:    "README.en.md",
+		months:    [12]string{"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"},
+		stats:     [5]string{"contributions", "public commits", "pull requests", "merged PRs", "external repos"},
+		weekly:    "contributions per week · last 12 months",
+		langTitle: "LANGUAGES",
+		langSub:   "by bytes · own repos",
+		header:    "| # | repo | latest | commits | date |",
+		footer:    "Last 12 months · updated %s",
+	},
+}
+
 func main() {
 	login := flag.String("user", os.Getenv("GITHUB_REPOSITORY_OWNER"), "usuario de GitHub")
-	readme := flag.String("readme", "README.md", "README a actualizar")
 	out := flag.String("out", "assets/generated", "carpeta de salida de los SVG")
 	limit := flag.Int("limit", 8, "número de repos recientes")
 	flag.Parse()
 
-	u, err := fetch(*login, os.Getenv("GITHUB_TOKEN"))
+	token := os.Getenv("GITHUB_TOKEN")
+	u, err := fetch(*login, token)
 	if err != nil {
 		log.Fatal(err)
 	}
 	if err := os.MkdirAll(*out, 0o755); err != nil {
 		log.Fatal(err)
 	}
-	write(filepath.Join(*out, "stats.svg"), statsSVG(u))
-	write(filepath.Join(*out, "languages.svg"), languagesSVG(u))
+	recent := recentActivity(u, *login, token, *limit)
+	for code, l := range locales {
+		write(filepath.Join(*out, "stats."+code+".svg"), statsSVG(u, l))
+		write(filepath.Join(*out, "languages."+code+".svg"), languagesSVG(u, l))
 
-	b, err := os.ReadFile(*readme)
-	if err != nil {
-		log.Fatal(err)
+		b, err := os.ReadFile(l.readme)
+		if err != nil {
+			log.Fatal(err)
+		}
+		updated, err := replaceBetween(string(b), "<!--recent:start-->", "<!--recent:end-->", recentTable(recent, *login, l))
+		if err != nil {
+			log.Fatal(err)
+		}
+		write(l.readme, updated)
 	}
-	updated, err := replaceBetween(string(b), "<!--recent:start-->", "<!--recent:end-->", recentTable(u, *login, os.Getenv("GITHUB_TOKEN"), *limit))
-	if err != nil {
-		log.Fatal(err)
-	}
-	write(*readme, updated)
 }
 
 func fetch(login, token string) (*user, error) {
@@ -188,17 +226,18 @@ func replaceBetween(s, start, end, content string) (string, error) {
 // ---------- tabla de contribuciones recientes ----------
 
 type activity struct {
-	repo    repo
-	last    time.Time
-	commits int
-	prTitle string
-	prURL   string
-	prState string
+	repo      repo
+	last      time.Time
+	commits   int
+	prTitle   string
+	prURL     string
+	prState   string
+	commitMsg string
+	commitURL string
 }
 
-var months = [...]string{"ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"}
-
-func recentTable(u *user, login, token string, limit int) string {
+// recentActivity junta commits y PRs por repo y devuelve los más recientes.
+func recentActivity(u *user, login, token string, limit int) []*activity {
 	byRepo := map[string]*activity{}
 	get := func(r repo) *activity {
 		a, ok := byRepo[r.NameWithOwner]
@@ -237,9 +276,17 @@ func recentTable(u *user, login, token string, limit int) string {
 	if len(list) > limit {
 		list = list[:limit]
 	}
+	for _, a := range list {
+		if a.prURL == "" {
+			a.commitMsg, a.commitURL = lastCommit(a.repo.NameWithOwner, login, token)
+		}
+	}
+	return list
+}
 
+func recentTable(list []*activity, login string, l locale) string {
 	var b strings.Builder
-	b.WriteString("| # | repo | lo último | commits | fecha |\n|:-:|---|---|:-:|--:|\n")
+	b.WriteString(l.header + "\n|:-:|---|---|:-:|--:|\n")
 	for i, a := range list {
 		name := a.repo.NameWithOwner
 		if owner, short, _ := strings.Cut(name, "/"); strings.EqualFold(owner, login) {
@@ -252,17 +299,17 @@ func recentTable(u *user, login, token string, limit int) string {
 		what := "—"
 		if a.prURL != "" {
 			what = fmt.Sprintf("%s [%s](%s)", badge("PR", strings.ToLower(a.prState)), mdEscape(a.prTitle), a.prURL)
-		} else if msg, url := lastCommit(a.repo.NameWithOwner, login, token); url != "" {
-			what = fmt.Sprintf("%s [%s](%s)", badge("commit", ""), mdEscape(msg), url)
+		} else if a.commitURL != "" {
+			what = fmt.Sprintf("%s [%s](%s)", badge("commit", ""), mdEscape(a.commitMsg), a.commitURL)
 		}
 		commits := "—"
 		if a.commits > 0 {
 			commits = fmt.Sprint(a.commits)
 		}
 		fmt.Fprintf(&b, "| `%02d` | [**%s**](%s)%s | %s | %s | %s |\n",
-			i+1, name, a.repo.URL, lang, what, commits, shortDate(a.last))
+			i+1, name, a.repo.URL, lang, what, commits, shortDate(a.last, l.months))
 	}
-	fmt.Fprintf(&b, "\n<sub>Últimos 12 meses · actualizado el %s</sub>", time.Now().UTC().Format("2006-01-02"))
+	fmt.Fprintf(&b, "\n<sub>"+l.footer+"</sub>", time.Now().UTC().Format("2006-01-02"))
 	return b.String()
 }
 
@@ -301,7 +348,7 @@ func lastCommit(nwo, login, token string) (msg, url string) {
 	return msg, commits[0].HTMLURL
 }
 
-func shortDate(t time.Time) string {
+func shortDate(t time.Time, months [12]string) string {
 	t = t.Local()
 	if t.Year() == time.Now().Year() {
 		return fmt.Sprintf("%d %s", t.Day(), months[t.Month()-1])
@@ -315,17 +362,17 @@ func mdEscape(s string) string {
 
 // ---------- stats.svg ----------
 
-func statsSVG(u *user) string {
+func statsSVG(u *user, l locale) string {
 	c := u.Contributions
 	stats := []struct {
 		n     int
 		label string
 	}{
-		{c.Calendar.Total, "contribuciones"},
-		{c.Commits, "commits públicos"},
-		{u.PullRequests.TotalCount, "pull requests"},
-		{u.Merged.TotalCount, "PRs merged"},
-		{u.ContributedTo.TotalCount, "repos externos"},
+		{c.Calendar.Total, l.stats[0]},
+		{c.Commits, l.stats[1]},
+		{u.PullRequests.TotalCount, l.stats[2]},
+		{u.Merged.TotalCount, l.stats[3]},
+		{u.ContributedTo.TotalCount, l.stats[4]},
 	}
 
 	var weeks []int
@@ -373,14 +420,14 @@ func statsSVG(u *user) string {
 		fmt.Fprintf(&s, `<rect class="b" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2" fill="url(#bar)" opacity="%.2f" style="animation-delay:%.2fs"><title>%d</title></rect>`+"\n",
 			40+bw*float64(i)+1.5, bottom-h, bw-3, h, 0.35+0.65*float64(n)/float64(peak), 0.3+float64(i)*0.015, n)
 	}
-	fmt.Fprintf(&s, `<text x="40" y="236" font-size="11" fill="#9d8bb0">contribuciones por semana · últimos 12 meses</text>
-</svg>`)
+	fmt.Fprintf(&s, `<text x="40" y="236" font-size="11" fill="#9d8bb0">%s</text>
+</svg>`, l.weekly)
 	return s.String()
 }
 
 // ---------- languages.svg ----------
 
-func languagesSVG(u *user) string {
+func languagesSVG(u *user, loc locale) string {
 	type lang struct {
 		name, color string
 		size        int
@@ -423,9 +470,9 @@ func languagesSVG(u *user) string {
 </style>
 <rect width="495" height="195" rx="12" fill="url(#bg)"/>
 <rect x=".5" y=".5" width="494" height="194" rx="12" fill="none" stroke="#5a189a"/>
-<text x="24" y="34" font-size="14" font-weight="700" fill="#c77dff" letter-spacing="1">LENGUAJES</text>
-<text x="471" y="34" text-anchor="end" font-size="10" fill="#7b6a8f">por bytes · repos propios</text>
-`, font)
+<text x="24" y="34" font-size="14" font-weight="700" fill="#c77dff" letter-spacing="1">%s</text>
+<text x="471" y="34" text-anchor="end" font-size="10" fill="#7b6a8f">%s</text>
+`, font, loc.langTitle, loc.langSub)
 	for i, l := range langs {
 		y := 58 + i*22
 		pct := float64(l.size) / float64(total)

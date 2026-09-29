@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0221"/><stop offset=".55" stop-color="#1b0638"/><stop offset="1" stop-color="#3c096c"/></linearGradient>
-  <linearGradient id="neon" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#7b2cbf"/><stop offset=".6" stop-color="#c77dff"/><stop offset="1" stop-color="#ff6ec7"/></linearGradient>
-  <linearGradient id="neonH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d4edd"/><stop offset="1" stop-color="#ff6ec7"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0221"/><stop offset="1" stop-color="#240046"/></linearGradient>
+  <linearGradient id="ico" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e8ff"/><stop offset="1" stop-color="#c77dff"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d4edd"/><stop offset="1" stop-color="#ff6ec7"/></linearGradient>
+  <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0221"/><stop offset=".55" stop-color="#1b0638"/><stop offset="1" stop-color="#3c096c"/></linearGradient>
+  <linearGradient id="eq" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#7b2cbf"/><stop offset=".6" stop-color="#c77dff"/><stop offset="1" stop-color="#ff6ec7"/></linearGradient>
   <radialGradient id="disc"><stop offset="0" stop-color="#1c1026"/><stop offset=".7" stop-color="#0b0612"/><stop offset="1" stop-color="#150a22"/></radialGradient>
   <radialGradient id="glow"><stop offset="0" stop-color="#9d4edd" stop-opacity=".55"/><stop offset="1" stop-color="#9d4edd" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#c77dff" stroke-opacity=".06"/></pattern>
   <clipPath id="frame"><rect width="1000" height="330" rx="18"/></clipPath>
-  <clipPath id="c0"><rect x="360" y="164" height="22" width="0"><animate attributeName="width" from="0" to="206" begin="0.60s" dur="0.50s" fill="freeze"/></rect></clipPath><clipPath id="c1"><rect x="360" y="190" height="22" width="0"><animate attributeName="width" from="0" to="494" begin="1.35s" dur="0.25s" fill="freeze"/></rect></clipPath><clipPath id="c2"><rect x="360" y="216" height="22" width="0"><animate attributeName="width" from="0" to="265" begin="1.85s" dur="0.50s" fill="freeze"/></rect></clipPath><clipPath id="c3"><rect x="360" y="242" height="22" width="0"><animate attributeName="width" from="0" to="520" begin="2.60s" dur="0.25s" fill="freeze"/></rect></clipPath><clipPath id="c4"><rect x="360" y="268" height="22" width="0"><animate attributeName="width" from="0" to="154" begin="3.10s" dur="0.50s" fill="freeze"/></rect></clipPath>
+  <clipPath id="c0"><rect x="360" y="164" height="22" width="0"><animate attributeName="width" from="0" to="206" begin="0.60s" dur="0.50s" fill="freeze"/></rect></clipPath><clipPath id="c1"><rect x="360" y="190" height="22" width="0"><animate attributeName="width" from="0" to="520" begin="1.35s" dur="0.25s" fill="freeze"/></rect></clipPath><clipPath id="c2"><rect x="360" y="216" height="22" width="0"><animate attributeName="width" from="0" to="265" begin="1.85s" dur="0.50s" fill="freeze"/></rect></clipPath><clipPath id="c3"><rect x="360" y="242" height="22" width="0"><animate attributeName="width" from="0" to="494" begin="2.60s" dur="0.25s" fill="freeze"/></rect></clipPath><clipPath id="c4"><rect x="360" y="268" height="22" width="0"><animate attributeName="width" from="0" to="154" begin="3.10s" dur="0.50s" fill="freeze"/></rect></clipPath>
 </defs>
 <style>
   .spin{animation:spin 3.2s linear infinite;transform-box:fill-box;transform-origin:center}
@@ -16,34 +18,27 @@
   @keyframes eq{0%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
   .cursor{animation:blink 1s steps(1) infinite}
   @keyframes blink{50%{opacity:0}}
-  .prog{animation:prog 6s linear infinite;transform-box:fill-box;transform-origin:left}
-  @keyframes prog{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
   .scan{animation:scan 5s linear infinite}
   @keyframes scan{0%{transform:translateY(0);opacity:0}10%{opacity:.6}90%{opacity:.6}100%{transform:translateY(150px);opacity:0}}
   .g1{animation:g1 4s steps(1) infinite} .g2{animation:g2 4s steps(1) infinite}
   @keyframes g1{0%,88%,100%{transform:translate(0,0);opacity:0}90%{transform:translate(-3px,1px);opacity:.8}93%{transform:translate(2px,-1px);opacity:.8}96%{transform:translate(-1px,0);opacity:.6}}
   @keyframes g2{0%,88%,100%{transform:translate(0,0);opacity:0}90%{transform:translate(3px,-1px);opacity:.8}93%{transform:translate(-2px,1px);opacity:.8}96%{transform:translate(1px,0);opacity:.6}}
-  .pulse{animation:pulse 2.4s ease-in-out infinite}
-  @keyframes pulse{50%{opacity:.35}}
   .note{animation:float 4s ease-in infinite;opacity:0}
   @keyframes float{0%{transform:translate(0,0);opacity:0}15%{opacity:.9}100%{transform:translate(18px,-70px);opacity:0}}
 </style>
 <g clip-path="url(#frame)">
-  <rect width="1000" height="330" fill="url(#bg)"/>
+  <rect width="1000" height="330" fill="url(#hbg)"/>
   <rect width="1000" height="330" fill="url(#grid)"/>
   <circle cx="170" cy="165" r="170" fill="url(#glow)"/>
-
-  <!-- vinyl -->
   <g class="spin">
     <circle cx="170" cy="165" r="125" fill="url(#disc)" stroke="#3c096c" stroke-width="2"/>
     <circle cx="170" cy="165" r="48" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="53" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="58" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="63" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="68" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="73" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="78" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="83" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="88" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="93" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="98" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="103" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="108" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="113" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/><circle cx="170" cy="165" r="118" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.85"/><circle cx="170" cy="165" r="123" fill="none" stroke="#2a1a3d" stroke-width="0.8" opacity="0.35"/>
     <path d="M170 45 A120 120 0 0 1 280 110" stroke="#e0aaff" stroke-opacity=".25" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <circle cx="170" cy="165" r="42" fill="url(#neonH)"/>
+    <circle cx="170" cy="165" r="42" fill="url(#neon)"/>
     <text x="170" y="160" text-anchor="middle" font-size="11" font-weight="700" fill="#10002b" letter-spacing="2">SIDE A</text>
     <text x="170" y="176" text-anchor="middle" font-size="8" fill="#240046">33⅓ RPM</text>
     <circle cx="170" cy="165" r="4" fill="#0d0221"/>
   </g>
-  <!-- tonearm -->
   <g stroke-linecap="round">
     <circle cx="308" cy="42" r="14" fill="#240046" stroke="#9d4edd" stroke-width="2"/>
     <path d="M308 42 L292 150 L262 190" stroke="#c77dff" stroke-width="5" fill="none"/>
@@ -52,22 +47,17 @@
   <text class="note" x="60" y="80" font-size="22" fill="#e0aaff">♪</text>
   <text class="note" x="275" y="270" font-size="18" fill="#ff6ec7" style="animation-delay:1.6s">♫</text>
   <text class="note" x="40" y="250" font-size="16" fill="#c77dff" style="animation-delay:2.8s">♩</text>
-
-  <!-- name + glitch -->
   <g font-size="54" font-weight="800" letter-spacing="3">
     <text class="g1" x="360" y="84" fill="#ff6ec7">CRISTY</text>
     <text class="g2" x="360" y="84" fill="#5ee7ff">CRISTY</text>
     <text x="360" y="84" fill="#f3e8ff">CRISTY</text>
   </g>
   <text x="362" y="112" font-size="14" fill="#c77dff" letter-spacing="1">DevSecOps · Software Architecture · Linux · Open Source</text>
-  <rect class="bar" x="860" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.76s;animation-delay:-0.15s"/><rect class="bar" x="871" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:1.02s;animation-delay:-0.07s"/><rect class="bar" x="882" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.93s;animation-delay:-0.37s"/><rect class="bar" x="893" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.55s;animation-delay:-0.51s"/><rect class="bar" x="904" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.53s;animation-delay:-0.43s"/><rect class="bar" x="915" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.56s;animation-delay:-0.09s"/><rect class="bar" x="926" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.84s;animation-delay:-0.83s"/><rect class="bar" x="937" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.60s;animation-delay:-0.22s"/><rect class="bar" x="948" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:1.00s;animation-delay:-0.95s"/><rect class="bar" x="959" y="34" width="7" height="44" rx="2" fill="url(#neon)" style="animation-duration:0.96s;animation-delay:-0.40s"/>
-  
-
-  <!-- terminal -->
+  <rect class="bar" x="860" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.76s;animation-delay:-0.15s"/><rect class="bar" x="871" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:1.02s;animation-delay:-0.07s"/><rect class="bar" x="882" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.93s;animation-delay:-0.37s"/><rect class="bar" x="893" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.55s;animation-delay:-0.51s"/><rect class="bar" x="904" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.53s;animation-delay:-0.43s"/><rect class="bar" x="915" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.56s;animation-delay:-0.09s"/><rect class="bar" x="926" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.84s;animation-delay:-0.83s"/><rect class="bar" x="937" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.60s;animation-delay:-0.22s"/><rect class="bar" x="948" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:1.00s;animation-delay:-0.95s"/><rect class="bar" x="959" y="34" width="7" height="44" rx="2" fill="url(#eq)" style="animation-duration:0.96s;animation-delay:-0.40s"/>
   <rect x="350" y="128" width="620" height="188" rx="10" fill="#0a0118" fill-opacity=".85" stroke="#5a189a"/>
   <circle cx="366" cy="142" r="4" fill="#ff6ec7"/><circle cx="380" cy="142" r="4" fill="#c77dff"/><circle cx="394" cy="142" r="4" fill="#7b2cbf"/>
   <text x="960" y="146" text-anchor="end" font-size="10" fill="#7b6a8f">bash — fedora</text>
-  <g font-size="14"><text x="364" y="180" clip-path="url(#c0)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff">whoami</tspan></text><text x="364" y="206" clip-path="url(#c1)"><tspan fill="#9d8bb0">› </tspan><tspan fill="#e0aaff">Cristy · Ing. de Sistemas, 8vo semestre · Cartagena, CO</tspan></text><text x="364" y="232" clip-path="url(#c2)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff">cat focus.txt</tspan></text><text x="364" y="258" clip-path="url(#c3)"><tspan fill="#9d8bb0">› </tspan><tspan fill="#e0aaff">DevSecOps · arquitectura de software · Linux · open source</tspan></text><text x="364" y="284" clip-path="url(#c4)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff"></tspan></text><rect class="cursor" x="508" y="271" width="8" height="16" fill="#c77dff" opacity="0"><set attributeName="opacity" to="1" begin="3.85s"/></rect></g>
+  <g font-size="14"><text x="364" y="180" clip-path="url(#c0)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff">whoami</tspan></text><text x="364" y="206" clip-path="url(#c1)"><tspan fill="#9d8bb0">› </tspan><tspan fill="#e0aaff">Cristy · Systems Engineering, 8th semester · Cartagena, CO</tspan></text><text x="364" y="232" clip-path="url(#c2)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff">cat focus.txt</tspan></text><text x="364" y="258" clip-path="url(#c3)"><tspan fill="#9d8bb0">› </tspan><tspan fill="#e0aaff">DevSecOps · software architecture · Linux · open source</tspan></text><text x="364" y="284" clip-path="url(#c4)"><tspan fill="#c77dff">cristy</tspan><tspan fill="#7b6a8f">@</tspan><tspan fill="#ff6ec7">fedora</tspan><tspan fill="#7b6a8f">:~$ </tspan><tspan fill="#f3e8ff"></tspan></text><rect class="cursor" x="508" y="271" width="8" height="16" fill="#c77dff" opacity="0"><set attributeName="opacity" to="1" begin="3.85s"/></rect></g>
   <rect class="scan" x="351" y="152" width="618" height="2" fill="#c77dff" opacity="0"/>
 </g>
 <rect x="1" y="1" width="998" height="328" rx="18" fill="none" stroke="#5a189a" stroke-opacity=".6"/>
