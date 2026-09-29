@@ -125,7 +125,7 @@ type locale struct {
 
 var locales = map[string]locale{
 	"es": {
-		readme:    "README.md",
+		readme:    "README.es.md",
 		months:    [12]string{"ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"},
 		stats:     [5]string{"contribuciones", "commits públicos", "pull requests", "PRs merged", "repos externos"},
 		weekly:    "contribuciones por semana · últimos 12 meses",
@@ -135,7 +135,7 @@ var locales = map[string]locale{
 		footer:    "Últimos 12 meses · actualizado el %s",
 	},
 	"en": {
-		readme:    "README.en.md",
+		readme:    "README.md",
 		months:    [12]string{"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"},
 		stats:     [5]string{"contributions", "public commits", "pull requests", "merged PRs", "external repos"},
 		weekly:    "contributions per week · last 12 months",

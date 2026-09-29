@@ -12,21 +12,21 @@
 <text x="24" y="34" font-size="14" font-weight="700" fill="#c77dff" letter-spacing="1">LANGUAGES</text>
 <text x="471" y="34" text-anchor="end" font-size="10" fill="#7b6a8f">by bytes · own repos</text>
 <circle cx="28" cy="54" r="4" fill="#3178c6"/><text x="40" y="58" font-size="12" fill="#f3e8ff">TypeScript</text>
-<rect x="150" y="47" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="47" width="187.2" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.00s"/>
-<text x="471" y="58" text-anchor="end" font-size="11" fill="#e0aaff">72.0%</text>
+<rect x="150" y="47" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="47" width="172.2" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.00s"/>
+<text x="471" y="58" text-anchor="end" font-size="11" fill="#e0aaff">66.2%</text>
 <circle cx="28" cy="76" r="4" fill="#00ADD8"/><text x="40" y="80" font-size="12" fill="#f3e8ff">Go</text>
-<rect x="150" y="69" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="69" width="38.0" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.10s"/>
-<text x="471" y="80" text-anchor="end" font-size="11" fill="#e0aaff">14.6%</text>
-<circle cx="28" cy="98" r="4" fill="#3572A5"/><text x="40" y="102" font-size="12" fill="#f3e8ff">Python</text>
-<rect x="150" y="91" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="91" width="15.1" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.20s"/>
-<text x="471" y="102" text-anchor="end" font-size="11" fill="#e0aaff">5.8%</text>
-<circle cx="28" cy="120" r="4" fill="#ff5a03"/><text x="40" y="124" font-size="12" fill="#f3e8ff">Astro</text>
-<rect x="150" y="113" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="113" width="11.0" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.30s"/>
-<text x="471" y="124" text-anchor="end" font-size="11" fill="#e0aaff">4.2%</text>
-<circle cx="28" cy="142" r="4" fill="#f1e05a"/><text x="40" y="146" font-size="12" fill="#f3e8ff">JavaScript</text>
-<rect x="150" y="135" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="135" width="8.3" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.40s"/>
-<text x="471" y="146" text-anchor="end" font-size="11" fill="#e0aaff">3.2%</text>
-<circle cx="28" cy="164" r="4" fill="#6E4C13"/><text x="40" y="168" font-size="12" fill="#f3e8ff">Assembly</text>
-<rect x="150" y="157" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="157" width="4.0" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.50s"/>
-<text x="471" y="168" text-anchor="end" font-size="11" fill="#e0aaff">0.1%</text>
+<rect x="150" y="69" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="69" width="29.0" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.10s"/>
+<text x="471" y="80" text-anchor="end" font-size="11" fill="#e0aaff">11.2%</text>
+<circle cx="28" cy="98" r="4" fill="#ff5a03"/><text x="40" y="102" font-size="12" fill="#f3e8ff">Astro</text>
+<rect x="150" y="91" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="91" width="26.2" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.20s"/>
+<text x="471" y="102" text-anchor="end" font-size="11" fill="#e0aaff">10.1%</text>
+<circle cx="28" cy="120" r="4" fill="#3572A5"/><text x="40" y="124" font-size="12" fill="#f3e8ff">Python</text>
+<rect x="150" y="113" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="113" width="8.2" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.30s"/>
+<text x="471" y="124" text-anchor="end" font-size="11" fill="#e0aaff">3.1%</text>
+<circle cx="28" cy="142" r="4" fill="#00B4AB"/><text x="40" y="146" font-size="12" fill="#f3e8ff">Dart</text>
+<rect x="150" y="135" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="135" width="7.8" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.40s"/>
+<text x="471" y="146" text-anchor="end" font-size="11" fill="#e0aaff">3.0%</text>
+<circle cx="28" cy="164" r="4" fill="#f34b7d"/><text x="40" y="168" font-size="12" fill="#f3e8ff">C++</text>
+<rect x="150" y="157" width="260" height="8" rx="4" fill="#2a1446"/><rect class="b" x="150" y="157" width="6.0" height="8" rx="4" fill="url(#bar)" style="animation-delay:0.50s"/>
+<text x="471" y="168" text-anchor="end" font-size="11" fill="#e0aaff">2.3%</text>
 </svg>

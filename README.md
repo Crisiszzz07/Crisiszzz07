@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="https://github.com/Crisiszzz07"><img src="./assets/lang/es-on.svg" alt="Español" height="36"/></a>
-<a href="https://github.com/Crisiszzz07/Crisiszzz07/blob/main/README.en.md"><img src="./assets/lang/en-off.svg" alt="English" height="36"/></a>
+<a href="https://github.com/Crisiszzz07/Crisiszzz07/blob/main/README.es.md"><img src="./assets/lang/es-off.svg" alt="Español" height="36"/></a>
+<a href="https://github.com/Crisiszzz07"><img src="./assets/lang/en-on.svg" alt="English" height="36"/></a>
 
-<img src="./assets/hero.es.svg" alt="Cristy · DevSecOps · Software Architecture · Linux" width="100%"/>
+<img src="./assets/hero.en.svg" alt="Cristy · DevSecOps · Software Architecture · Linux" width="100%"/>
 
-[`sobre mí`](#about) · [`enfoque`](#focus) · [`stack`](#stack) · [`contribuciones`](#contributions) · [`stats`](#stats)
+[`about`](#about) · [`focus`](#focus) · [`stack`](#stack) · [`contributions`](#contributions) · [`stats`](#stats)
 
 </div>
 
@@ -13,24 +13,25 @@
 
 <a id="about"></a>
 
-## 01 · sobre mí
+## 01 · about me
 
-Estudio Ingeniería de Sistemas (8vo semestre) en Cartagena, Colombia. Lo que más me interesa es la ciberseguridad aplicada a DevSecOps y la arquitectura de software: cómo se diseña un sistema y cómo se protege una vez está en producción.
+I study Systems Engineering (8th semester) in Cartagena, Colombia. What interests me most is security applied to DevSecOps and software architecture: how a system is designed and how it is protected once it runs in production.
 
-Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me gusta entender cómo funcionan las cosas por dentro antes de darlas por hechas.
+I use Fedora every day, contribute to open source projects when I can, and like to understand how things work inside before taking them for granted. :D
 
-- **Ahora:** construyendo un [roadmap de redes para DevSecOps](https://github.com/Crisiszzz07/Networking-DevSecOps) (namespaces, netfilter, TLS/mTLS, CNI, eBPF).
-- **Practicando:** labs Red Team / Blue Team en máquinas virtuales, con Wazuh y MITRE ATT&CK.
-- **Idiomas:** español nativo, inglés conversacional.
+- **Now:** building a [networking roadmap for DevSecOps](https://github.com/Crisiszzz07/Networking-DevSecOps) (namespaces, netfilter, TLS/mTLS, CNI, eBPF), along with a few private repos and projects.
+- **Also:** building a steady routine on [TryHackMe](https://tryhackme.com/p/Crisiszzz07) and looking for projects on GitHub to contribute to.
+- **Practicing:** Red Team / Blue Team labs on virtual machines, with Wazuh and MITRE ATT&CK.
+- **Languages:** Spanish (native), English (conversational).
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
 <a id="focus"></a>
 
-## 02 · enfoque
+## 02 · focus
 
 <div align="center">
-<img src="./assets/mixer.es.svg" alt="Etapas de un pipeline DevSecOps: plan, code, deps, secrets, build, IaC, deploy, monitor" width="100%"/>
+<img src="./assets/mixer.en.svg" alt="Stages of a DevSecOps pipeline: plan, code, deps, secrets, build, IaC, deploy, monitor" width="100%"/>
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
@@ -40,23 +41,23 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 ## 03 · stack
 
 <div align="center">
-<img src="./assets/stack.es.svg" alt="Lenguajes: Go, TypeScript, Bash, Python. También: Dart, Flutter, C, C++, Java, Rust. Aprendiendo: Kali Linux, Go, Wazuh, MITRE ATT&CK, eBPF, Kubernetes" width="100%"/>
+<img src="./assets/stack.en.svg" alt="Languages: Go, TypeScript, Bash, Python. Also: Dart, Flutter, C, C++, Java, Rust. Learning: Kali Linux, Go, Wazuh, MITRE ATT&CK, eBPF, Kubernetes" width="100%"/>
 </div>
 
-**Mi entorno de trabajo actual**
+**My current setup**
 
 <div align="center">
-<img src="./assets/setup.es.svg" alt="Entorno: Fedora como sistema diario, Ubuntu y Kali Linux en VM, Podman y Docker, virt-manager (KVM/QEMU), bash, pnpm, git y GitHub CLI" width="100%"/>
+<img src="./assets/setup.en.svg" alt="Setup: Fedora as daily driver, Ubuntu and Kali Linux in VMs, Podman and Docker, virt-manager (KVM/QEMU), bash, pnpm, git and GitHub CLI" width="100%"/>
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
 <a id="contributions"></a>
 
-## 04 · contribuciones recientes
+## 04 · recent contributions
 
 <!--recent:start-->
-| # | repo | lo último | commits | fecha |
+| # | repo | latest | commits | date |
 |:-:|---|---|:-:|--:|
 | `01` | [**STOCHASTIX**](https://github.com/Crisiszzz07/STOCHASTIX) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Se agregan las funciones que faltaban(feat: agregar dist. Uniforme, i…](https://github.com/Crisiszzz07/STOCHASTIX/pull/1) | 16 | 28 sep |
 | `02` | [**Networking-DevSecOps**](https://github.com/Crisiszzz07/Networking-DevSecOps) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [chore(teoria): añade hoja de estados del diagrama de mecanismo](https://github.com/Crisiszzz07/Networking-DevSecOps/commit/d1b706f224c86db5ef8eb699c94f8d6a3b8196d8) | 6 | 26 sep |
@@ -64,10 +65,10 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 | `04` | [**AlejoVP0411/random-lab**](https://github.com/AlejoVP0411/random-lab) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [h](https://github.com/AlejoVP0411/random-lab/commit/558de60ece771424540b6c08edf81755d9018856) | 9 | 14 sep |
 | `05` | [**LAB_architectural-design-patterns**](https://github.com/Crisiszzz07/LAB_architectural-design-patterns) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [primer commit: chain of responsability](https://github.com/Crisiszzz07/LAB_architectural-design-patterns/commit/7d3b132ea86f2b88f9487fe566a80378df9b370a) | 1 | 8 sep |
 | `06` | [**Water-Telemetry-Dashboard**](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard) <sub>HTML</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [corrección para deploy](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard/commit/b6bd6acdf7ef10ba6d7e79a2d30201782c46bf84) | 6 | 2 sep |
-| `07` | [**Wazuh-for-vulnerable-corporative-system**](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [sistema spine vlnerable diseñado](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system/commit/cb2a45c9967a365e4c24f28e940917666c831afe) | 2 | 31 ago |
-| `08` | [**SIMULACION_TRABAJO**](https://github.com/Crisiszzz07/SIMULACION_TRABAJO) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [error en html solucionado](https://github.com/Crisiszzz07/SIMULACION_TRABAJO/commit/c5b865bd4b77737bb031ef18ee30ae04216f685a) | 17 | 31 ago |
+| `07` | [**Wazuh-for-vulnerable-corporative-system**](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [sistema spine vlnerable diseñado](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system/commit/cb2a45c9967a365e4c24f28e940917666c831afe) | 2 | 31 aug |
+| `08` | [**SIMULACION_TRABAJO**](https://github.com/Crisiszzz07/SIMULACION_TRABAJO) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [error en html solucionado](https://github.com/Crisiszzz07/SIMULACION_TRABAJO/commit/c5b865bd4b77737bb031ef18ee30ae04216f685a) | 17 | 31 aug |
 
-<sub>Últimos 12 meses · actualizado el 2026-09-29</sub>
+<sub>Last 12 months · updated 2026-09-29</sub>
 <!--recent:end-->
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
@@ -78,15 +79,15 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 
 <div align="center">
 
-<img src="./assets/generated/stats.es.svg" width="100%" alt="Contribuciones, commits y pull requests"/>
+<img src="./assets/generated/stats.en.svg" width="100%" alt="Contributions, commits and pull requests"/>
 
-<img src="./assets/generated/languages.es.svg" width="49%" alt="Lenguajes más usados"/>
-<img src="https://streak-stats.demolab.com?user=Crisiszzz07&background=0D0221&border=5A189A&stroke=3C096C&ring=C77DFF&fire=FF6EC7&currStreakNum=F3E8FF&sideNums=F3E8FF&currStreakLabel=C77DFF&sideLabels=E0AAFF&dates=9D8BB0&border_radius=12&locale=es" width="49%" alt="Racha de contribuciones"/>
+<img src="./assets/generated/languages.en.svg" width="49%" alt="Most used languages"/>
+<img src="https://streak-stats.demolab.com?user=Crisiszzz07&background=0D0221&border=5A189A&stroke=3C096C&ring=C77DFF&fire=FF6EC7&currStreakNum=F3E8FF&sideNums=F3E8FF&currStreakLabel=C77DFF&sideLabels=E0AAFF&dates=9D8BB0&border_radius=12&locale=en" width="49%" alt="Contribution streak"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-light.svg"/>
-  <img alt="Gráfica de contribuciones" src="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-dark.svg" width="100%"/>
+  <img alt="Contribution graph" src="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-dark.svg" width="100%"/>
 </picture>
 
 </div>
