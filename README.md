@@ -1,0 +1,113 @@
+<div align="center">
+
+<img src="./assets/hero.svg" alt="Cristy · DevSecOps · arquitectura de software · Linux" width="100%"/>
+
+[`sobre mí`](#sobre-mi) · [`enfoque`](#enfoque) · [`stack`](#stack) · [`contribuciones`](#contribuciones) · [`stats`](#stats)
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<a id="sobre-mi"></a>
+
+## 01 · sobre mí
+
+Estudio Ingeniería de Sistemas (8vo semestre) en Cartagena, Colombia. Lo que más me interesa es la ciberseguridad aplicada a DevSecOps y la arquitectura de software: cómo se diseña un sistema y cómo se protege una vez está en producción.
+
+Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me gusta entender cómo funcionan las cosas por dentro antes de darlas por hechas.
+
+- **Ahora:** construyendo un [roadmap de redes para DevSecOps](https://github.com/Crisiszzz07/Networking-DevSecOps) (namespaces, netfilter, TLS/mTLS, CNI, eBPF).
+- **Practicando:** labs Red Team / Blue Team en máquinas virtuales, con Wazuh y MITRE ATT&CK.
+- **Idiomas:** español nativo, inglés conversacional.
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<a id="enfoque"></a>
+
+## 02 · enfoque
+
+<div align="center">
+<img src="./assets/devsecops-mixer.svg" alt="Etapas de un pipeline DevSecOps: plan, code, deps, secrets, build, IaC, deploy, monitor" width="100%"/>
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<a id="stack"></a>
+
+## 03 · stack
+
+<div align="center">
+
+**Lenguajes**<br/>
+<img src="https://skillicons.dev/icons?i=go,ts,bash,py&theme=dark" alt="Go, TypeScript, Bash, Python"/>
+
+**También he trabajado con**<br/>
+<img src="https://skillicons.dev/icons?i=dart,flutter,c,cpp,java,rust&theme=dark" alt="Dart, Flutter, C, C++, Java, Rust"/>
+
+**Herramientas**<br/>
+<img src="https://skillicons.dev/icons?i=linux,ubuntu,docker,kali,git,github,pnpm&theme=dark" alt="Linux, Ubuntu, Docker, Kali, Git, GitHub, pnpm"/><br/>
+<img src="https://img.shields.io/badge/Fedora-51A2DA?style=for-the-badge&logo=fedora&logoColor=white"/>
+<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white"/>
+<img src="https://img.shields.io/badge/virt--manager-5a189a?style=for-the-badge&logo=qemu&logoColor=white"/>
+
+**Aprendiendo**<br/>
+<img src="https://img.shields.io/badge/Wazuh-3c096c?style=flat-square"/>
+<img src="https://img.shields.io/badge/MITRE_ATT%26CK-5a189a?style=flat-square"/>
+<img src="https://img.shields.io/badge/John_the_Ripper-7b2cbf?style=flat-square"/>
+<img src="https://img.shields.io/badge/eBPF-9d4edd?style=flat-square"/>
+<img src="https://img.shields.io/badge/Kubernetes-c77dff?style=flat-square&logo=kubernetes&logoColor=white"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<a id="contribuciones"></a>
+
+## 04 · contribuciones recientes
+
+<!--recent:start-->
+| # | repo | lo último | commits | fecha |
+|:-:|---|---|:-:|--:|
+| `01` | [**STOCHASTIX**](https://github.com/Crisiszzz07/STOCHASTIX) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Se agregan las funciones que faltaban(feat: agregar dist. Uniforme, i…](https://github.com/Crisiszzz07/STOCHASTIX/pull/1) | 14 | 28 sep |
+| `02` | [**Networking-DevSecOps**](https://github.com/Crisiszzz07/Networking-DevSecOps) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [chore(teoria): añade hoja de estados del diagrama de mecanismo](https://github.com/Crisiszzz07/Networking-DevSecOps/commit/d1b706f224c86db5ef8eb699c94f8d6a3b8196d8) | 6 | 26 sep |
+| `03` | [**crmne/zapfast**](https://github.com/crmne/zapfast) <sub>Rust</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Redact pairing credentials from logs](https://github.com/crmne/zapfast/pull/44) | 2 | 22 sep |
+| `04` | [**AlejoVP0411/random-lab**](https://github.com/AlejoVP0411/random-lab) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [h](https://github.com/AlejoVP0411/random-lab/commit/558de60ece771424540b6c08edf81755d9018856) | 9 | 14 sep |
+| `05` | [**LAB_architectural-design-patterns**](https://github.com/Crisiszzz07/LAB_architectural-design-patterns) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [primer commit: chain of responsability](https://github.com/Crisiszzz07/LAB_architectural-design-patterns/commit/7d3b132ea86f2b88f9487fe566a80378df9b370a) | 1 | 8 sep |
+| `06` | [**Water-Telemetry-Dashboard**](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard) <sub>HTML</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [corrección para deploy](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard/commit/b6bd6acdf7ef10ba6d7e79a2d30201782c46bf84) | 6 | 2 sep |
+| `07` | [**Wazuh-for-vulnerable-corporative-system**](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [sistema spine vlnerable diseñado](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system/commit/cb2a45c9967a365e4c24f28e940917666c831afe) | 2 | 31 ago |
+| `08` | [**SIMULACION_TRABAJO**](https://github.com/Crisiszzz07/SIMULACION_TRABAJO) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [error en html solucionado](https://github.com/Crisiszzz07/SIMULACION_TRABAJO/commit/c5b865bd4b77737bb031ef18ee30ae04216f685a) | 17 | 31 ago |
+
+<sub>Últimos 12 meses · actualizado el 2026-09-29</sub>
+<!--recent:end-->
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<a id="stats"></a>
+
+## 05 · stats
+
+<div align="center">
+
+<img src="./assets/generated/stats.svg" width="100%" alt="Contribuciones, commits y pull requests"/>
+
+<img src="./assets/generated/languages.svg" width="49%" alt="Lenguajes más usados"/>
+<img src="https://streak-stats.demolab.com?user=Crisiszzz07&background=0D0221&border=5A189A&stroke=3C096C&ring=C77DFF&fire=FF6EC7&currStreakNum=F3E8FF&sideNums=F3E8FF&currStreakLabel=C77DFF&sideLabels=E0AAFF&dates=9D8BB0&border_radius=12&locale=es" width="49%" alt="Racha de contribuciones"/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-light.svg"/>
+  <img alt="Gráfica de contribuciones" src="https://raw.githubusercontent.com/Crisiszzz07/Crisiszzz07/output/snake-dark.svg" width="100%"/>
+</picture>
+
+</div>
+
+<div align="center">
+
+<br/>
+
+<a href="https://github.com/Crisiszzz07"><img src="https://img.shields.io/badge/GitHub-Crisiszzz07-9d4edd?style=for-the-badge&logo=github&logoColor=white&labelColor=240046"/></a>
+<!-- <a href="https://www.linkedin.com/in/TU_USUARIO"><img src="https://img.shields.io/badge/LinkedIn-c77dff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=240046"/></a> -->
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:5a189a,100:c77dff&height=110&section=footer" width="100%"/>
+
+</div>
