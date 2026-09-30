@@ -11,8 +11,8 @@
 </style>
 <rect width="1000" height="250" rx="16" fill="url(#bg)"/>
 <rect x=".5" y=".5" width="999" height="249" rx="16" fill="none" stroke="#5a189a" stroke-opacity=".7"/>
-<g class="n" style="animation-delay:0.00s"><text x="132" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="#f3e8ff">270</text><text x="132" y="86" text-anchor="middle" font-size="12" fill="#c77dff" letter-spacing="1">contributions</text></g>
-<g class="n" style="animation-delay:0.08s"><text x="316" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="#f3e8ff">102</text><text x="316" y="86" text-anchor="middle" font-size="12" fill="#c77dff" letter-spacing="1">public commits</text></g>
+<g class="n" style="animation-delay:0.00s"><text x="132" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="#f3e8ff">272</text><text x="132" y="86" text-anchor="middle" font-size="12" fill="#c77dff" letter-spacing="1">contributions</text></g>
+<g class="n" style="animation-delay:0.08s"><text x="316" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="#f3e8ff">104</text><text x="316" y="86" text-anchor="middle" font-size="12" fill="#c77dff" letter-spacing="1">public commits</text></g>
 <line x1="224" y1="36" x2="224" y2="92" stroke="#3c096c"/>
 <g class="n" style="animation-delay:0.16s"><text x="500" y="62" text-anchor="middle" font-size="34" font-weight="800" fill="#f3e8ff">10</text><text x="500" y="86" text-anchor="middle" font-size="12" fill="#c77dff" letter-spacing="1">pull requests</text></g>
 <line x1="408" y1="36" x2="408" y2="92" stroke="#3c096c"/>
@@ -73,6 +73,6 @@
 <rect class="b" x="892.1" y="178.4" width="14.4" height="33.6" rx="2" fill="url(#bar)" opacity="0.44" style="animation-delay:1.03s"><title>8</title></rect>
 <rect class="b" x="909.4" y="161.6" width="14.4" height="50.4" rx="2" fill="url(#bar)" opacity="0.54" style="animation-delay:1.05s"><title>18</title></rect>
 <rect class="b" x="926.8" y="120.0" width="14.4" height="92.0" rx="2" fill="url(#bar)" opacity="1.00" style="animation-delay:1.06s"><title>60</title></rect>
-<rect class="b" x="944.1" y="141.7" width="14.4" height="70.3" rx="2" fill="url(#bar)" opacity="0.73" style="animation-delay:1.08s"><title>35</title></rect>
+<rect class="b" x="944.1" y="139.8" width="14.4" height="72.2" rx="2" fill="url(#bar)" opacity="0.75" style="animation-delay:1.08s"><title>37</title></rect>
 <text x="40" y="236" font-size="11" fill="#9d8bb0">contributions per week · last 12 months</text>
 </svg>
