@@ -66,9 +66,9 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 | `05` | [**AlejoVP0411/random-lab**](https://github.com/AlejoVP0411/random-lab) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [h](https://github.com/AlejoVP0411/random-lab/commit/558de60ece771424540b6c08edf81755d9018856) | 9 | 14 sep |
 | `06` | [**LAB_architectural-design-patterns**](https://github.com/Crisiszzz07/LAB_architectural-design-patterns) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [primer commit: chain of responsability](https://github.com/Crisiszzz07/LAB_architectural-design-patterns/commit/7d3b132ea86f2b88f9487fe566a80378df9b370a) | 1 | 8 sep |
 | `07` | [**Water-Telemetry-Dashboard**](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard) <sub>HTML</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [corrección para deploy](https://github.com/Crisiszzz07/Water-Telemetry-Dashboard/commit/b6bd6acdf7ef10ba6d7e79a2d30201782c46bf84) | 6 | 2 sep |
-| `08` | [**Wazuh-for-vulnerable-corporative-system**](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [sistema spine vlnerable diseñado](https://github.com/Crisiszzz07/Wazuh-for-vulnerable-corporative-system/commit/cb2a45c9967a365e4c24f28e940917666c831afe) | 2 | 31 ago |
+| `08` | [**SIMULACION_TRABAJO**](https://github.com/Crisiszzz07/SIMULACION_TRABAJO) <sub>Go</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [error en html solucionado](https://github.com/Crisiszzz07/SIMULACION_TRABAJO/commit/c5b865bd4b77737bb031ef18ee30ae04216f685a) | 17 | 31 ago |
 
-<sub>Últimos 12 meses · actualizado el 2026-10-01</sub>
+<sub>Últimos 12 meses · actualizado el 2026-10-02</sub>
 <!--recent:end-->
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
