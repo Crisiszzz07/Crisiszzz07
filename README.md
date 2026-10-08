@@ -68,7 +68,7 @@ I use Fedora every day, contribute to open source projects when I can, and like 
 | `07` | [**crmne/zapfast**](https://github.com/crmne/zapfast) <sub>Rust</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Redact pairing credentials from logs](https://github.com/crmne/zapfast/pull/44) | 2 | 22 sep |
 | `08` | [**AlejoVP0411/random-lab**](https://github.com/AlejoVP0411/random-lab) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [h](https://github.com/AlejoVP0411/random-lab/commit/558de60ece771424540b6c08edf81755d9018856) | 9 | 14 sep |
 
-<sub>Last 12 months · updated 2026-10-07</sub>
+<sub>Last 12 months · updated 2026-10-08</sub>
 <!--recent:end-->
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
