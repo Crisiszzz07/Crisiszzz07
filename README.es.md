@@ -59,7 +59,7 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 <!--recent:start-->
 | # | repo | lo último | commits | fecha |
 |:-:|---|---|:-:|--:|
-| `01` | [**SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL**](https://github.com/SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL) <sub>Python</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [feat: redefine el contrato de entrada y agrega su validador](https://github.com/SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL/pull/23) | 8 | 18 oct |
+| `01` | [**SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL**](https://github.com/SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL) <sub>Python</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [feat: redefine el contrato de entrada y agrega su validador](https://github.com/SIMULACIONUdeC2026-02/SIMULACION_TRABAJOFINAL/pull/23) | 11 | 20 oct |
 | `02` | [**STOCHASTIX**](https://github.com/Crisiszzz07/STOCHASTIX) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Se agregan las funciones que faltaban(feat: agregar dist. Uniforme, i…](https://github.com/Crisiszzz07/STOCHASTIX/pull/1) | 17 | 13 oct |
 | `03` | [**Cuaderno-de-agua**](https://github.com/Crisiszzz07/Cuaderno-de-agua) <sub>TypeScript</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [feat(exposicion): añadir índice temático y cronómetro con avisos](https://github.com/Crisiszzz07/Cuaderno-de-agua/commit/eaf6bd31b87fe74c973e6211955f161cf75797fa) | 12 | 7 oct |
 | `04` | [**RF03-Middleware**](https://github.com/Crisiszzz07/RF03-Middleware) <sub>Python</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [docs(rf03): actualización de la documentación link de la página actuali…](https://github.com/Crisiszzz07/RF03-Middleware/commit/698cf6ba78ed8e52f361b363fc2ad34d4dbbacb6) | 19 | 6 oct |
@@ -68,7 +68,7 @@ Uso Fedora todos los días, contribuyo a proyectos open source cuando puedo y me
 | `07` | [**crmne/zapfast**](https://github.com/crmne/zapfast) <sub>Rust</sub> | <img src="https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&labelColor=240046" alt="merged" align="absmiddle"/> [Redact pairing credentials from logs](https://github.com/crmne/zapfast/pull/44) | 2 | 22 sep |
 | `08` | [**SIMULACION_POLITICA_DEMANDA**](https://github.com/Crisiszzz07/SIMULACION_POLITICA_DEMANDA) <sub>CSS</sub> | <img src="https://img.shields.io/badge/-commit-5a189a?style=flat-square&labelColor=240046" alt="commit" align="absmiddle"/> [modificación de lógica](https://github.com/Crisiszzz07/SIMULACION_POLITICA_DEMANDA/commit/afafb3ae4d22eee2f016c82cb6879756bd6517dc) | 2 | 22 sep |
 
-<sub>Últimos 12 meses · actualizado el 2026-10-20</sub>
+<sub>Últimos 12 meses · actualizado el 2026-10-21</sub>
 <!--recent:end-->
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
